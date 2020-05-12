@@ -19,7 +19,7 @@ function BotonesEspecialidades() {
                     Cardiología
                 </button>
             </Link>
-            <Link to='/cardiologia' >
+            <Link to='/ginecologia' >
                 <button>
                     Ginecología
                 </button>

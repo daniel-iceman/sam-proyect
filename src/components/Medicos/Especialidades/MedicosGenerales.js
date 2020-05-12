@@ -3,17 +3,12 @@ import './Especialidades.css'
 import FotoMD from './FotoMD'
 import InformacionMD from './InformacionMD'
 import ContactoMD from './ContactoMD'
-// import Curriculum from './CurriculumDatos'
 
 import Popup from "reactjs-popup";
-//import './popup.css';
-
-
-
 
 function MedicosGenerales() {  
         
-    // Aqui se pone la información del médico 1
+    // Aqui se pone la información del médico general 1
     
     const fotoMDgeneral_1 = require(`../med_images/Generales/doc3.jpg`)
     const [nombreMDgeneral_1] = useState('Dra. Alejandra Montebaños')
@@ -26,7 +21,7 @@ function MedicosGenerales() {
     const [postgradoMDgeneral_1_2] = useState('Macrame')
     const [postgradoMDgeneral_1_3] = useState('Reposteria')
 
-    // Aqui se pone la información del médico 2
+    // Aqui se pone la información del médico general 2
     const fotoMDgeneral_2 = require(`../med_images/Generales/doc3.jpg`)
     const [nombreMDgeneral_2] = useState('Dra. Rocio Fernandez')
     const [especialidadMDgeneral_2] = useState('Medico General')
