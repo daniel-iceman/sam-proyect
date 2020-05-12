@@ -1,0 +1,64 @@
+.tituloMedicos {
+    margin-top: 56px;
+    height: 150px;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #2a3764 0%, #31b7bc 100%);
+}
+.tituloMedicos h1{
+    font-size: 42px;
+}
+
+.botonesEspecialidades {
+    min-width: 400px;
+    height: fit-content;
+    margin-top: 35px;
+    display: flex;
+    flex-flow: row wrap;    
+    justify-content: space-around;
+}
+.botonesEspecialidades button{
+    width: 500px;
+    height: 80px;
+    font-size: 24px;
+    color: white;
+    background: linear-gradient(135deg, #2a3764 0%, #31b7bc 100%);
+    border-radius: 15px;
+    border-style: none;
+    cursor: pointer;
+    margin-bottom: 50px;
+    transition: all 0.5s ease;
+}
+.botonesEspecialidades button:hover {
+    transform: scale(1.06);
+}
+
+
+
+
+/* Configuración iPhone X  375 */
+@media (max-width: 376px){
+    .tituloMedicos {
+        height: 100px;
+    }
+    .tituloMedicos h1{
+        font-size: 30px;
+    }
+    .botonesEspecialidades {
+        min-width: 350px;
+    }
+    .botonesEspecialidades button{
+        width: 340px;
+    }
+}
+/* Configuración iPhone 5E  320 */
+@media (max-width: 320px){
+    .botonesEspecialidades {
+        min-width: 320px;
+    }
+    .botonesEspecialidades button{
+        width: 310px;
+        margin-bottom: 10px;
+    }
+}

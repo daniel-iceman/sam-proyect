@@ -1,0 +1,86 @@
+.backdrop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background:rgb(0, 0, 26,0.9);
+    position: fixed;
+    z-index: 100;    
+}
+.backdrop h1{
+    width: fit-content;
+    height: 40px;    
+    color: rgb(170, 170, 170);
+    font-size: 40px;
+}
+.backdrop p{
+    font-family: 'Montserrat';
+    color: rgb(170, 170, 170);
+    letter-spacing: 1px;
+    width: fit-content;
+    height: fit-content;
+    margin-top: -15px;
+    margin-bottom: 0px;
+
+}
+
+/* Configuración iPad */
+@media (max-width: 769px) {
+    .backdrop {         
+        max-width: 768px;
+    }    
+}
+
+/* Configuración Nokia N9 480 */
+@media (max-width: 480px) {
+    .backdrop h1 {
+        font-size: 30px;
+    }
+    .backdrop p {
+        margin-top: -25px;
+        font-size: 14px;
+    }
+}
+
+/* Configuración iPhone PLUS 6/7/8 414 */
+@media (max-width: 415px) {
+    .backdrop {         
+        max-width: 415px;
+    }
+    .backdrop h1 {
+        font-size: 30px;
+    }
+    .backdrop p {
+        margin-top: -25px;
+        font-size: 14px;
+    }
+}
+
+/* Configuración Galaxy Note II 360 */
+@media (max-width: 360px) {
+    .backdrop h1 {
+        font-size: 20px;
+    }
+    .backdrop p {
+        margin-top: -25px;
+        font-size: 12px;
+    }
+}
+
+/* Configuración iPhone 5E 320 */
+@media (max-width: 321px) {
+    .backdrop {         
+        max-width: 321px;
+    }
+    .backdrop h1 {
+        font-size: 20px;
+    }
+    .backdrop p {
+        margin-top: -25px;
+        font-size: 12px;
+    }
+}
+

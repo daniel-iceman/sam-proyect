@@ -1,0 +1,109 @@
+/*Posición del texto "Servicios"*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+    left:-50px;
+    top:-2px;
+    height: 5px;
+    cursor: pointer;
+}
+.dropdown :hover {
+    color: white;
+    /*background-color:#192965;*/
+}
+      
+/* Menu desplegable -Posición, ancho, color y family font*/
+.SubMenuUl {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0px;
+    top:62px;
+    right:-240px;
+    width: 500px;
+    font-weight: 600px;
+    position: absolute;    
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:3;
+    animation: despliegueMenuDropdown 0.7s ease-out both;
+}
+
+/* Letra del submenú */
+.link {
+    text-decoration: none;
+}
+
+/* Background y color del menu desplegable */
+.SubMenuUl li  {
+    font-family: 'Montserrat', sans-serif;
+    color: #10316b;
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: 1.6px;
+    word-spacing: 2px;
+    background: white;
+}
+    
+.SubMenuUl li {
+    padding: 12px 16px;
+    border-bottom: 1px solid #e5e5e5;
+   
+}
+.SubMenuUl li:last-child {
+    border-bottom: none;
+}
+
+/*Hover del menú descendente*/
+.SubMenuUl li:hover {
+    background-color: #f0f0f0 ;
+    color:#10316b; 
+    animation: menuGo 0.2s ease-in both;
+}
+ 
+/* Titulo del submenu, color, letra y fondo*/    
+.buttonSM {
+    width:80px;
+    height:14px;
+    display: flex;
+    justify-content: center;
+    padding:23px 8px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color:#000D4D; 
+    margin-top: 2px;
+    margin-right: 150px;
+}
+.buttonSM :hover {
+    color: white;
+}     
+
+
+
+@keyframes menuGo{
+    0%{
+        transform: translateX(0px);
+    }    
+    100%{
+        transform: translateX(8px);
+    }
+}
+
+@keyframes despliegueMenuDropdown {
+    0%{
+        transform: translateX(350px);
+        
+    }
+    100%{
+        transform: translateX(-10px);
+    }
+}
+
+
+@media (max-width: 780px) {
+    .dropdown {
+        display: none;
+    }
+    
+}

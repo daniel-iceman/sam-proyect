@@ -1,0 +1,238 @@
+/* Propiedades de la barra lateral desplegable */
+.side-drawer {
+    height: 100%;
+    background:rgb(0, 0, 0, 0);
+    /*box-shadow: 2px 0px 5px rgb(0, 0, 0, 0.5);*/
+    position: fixed;
+    top: 90px;
+    right: 230px;
+    width: 100%;     
+    z-index: 200;
+    transform: translateX(-500%);  /* Posición oculta */ 
+    transition: transform 0.9s ease-out;
+    
+}
+.side-drawer.open {
+    transform: translateX(30%);  /* Posición desplegada */  /*-270*/   /*230*/
+}
+
+.side-drawer.open {
+    transform: translateX(30%);  /* Posición desplegada */
+}
+.side-drawer ul {
+    margin-left: 0px;
+    padding-left: 0px;
+    
+}
+
+
+/* ********* Propiedades del texto del menú *********** */
+#bloqueMenu h1 {
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+    color: white;
+}
+#bloqueMenu li {
+    font-family: 'Montserrat';
+    color: white;
+    letter-spacing: 2px;
+    list-style: none;
+    padding-bottom: 15px;        
+}
+#bloqueMenu li:hover{
+    color: greenyellow;
+}
+#bloqueMenu p {
+    color: rgb(170, 170, 170);
+    font-family: 'Montserrat';
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+#bloqueMenu a {
+    text-decoration: none;
+}
+
+
+/* ********* Sección Sign In *********** */
+.seccionSignIn {
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+
+
+/* ********* Sección Home *********** */
+.SeccionHome {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid gray;    
+}
+
+/* ********* Sección Consulta *********** */
+.SeccionConsulta {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+}
+
+/* ********* Sección Descubre *********** */
+.SeccionDescubre {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+}
+
+/* ********* Sección Nosotros *********** */
+.SeccionNosotros {
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+
+/* Configuración iPad */
+@media (max-width: 769px) {
+    .side-drawer{
+        max-width: 768px;
+    }
+    #bloqueMenu li {
+        font-size: 22px;
+    }  
+}
+
+/* Configuración Nokia N9 480 */
+@media (max-width: 480px) {
+    .side-drawer{
+        max-width: 450px; 
+    }
+    .side-drawer.open {
+        transform: translateX(48%);  /* Posición desplegada */
+    }
+    #bloqueMenu h1 {
+        font-size: 23px;
+    }
+    #bloqueMenu li {
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+    #bloqueMenu p{
+        margin-bottom: 4px;
+        margin-top: 25px;
+    }
+    .SeccionHome li {
+        margin-top: 15px;
+    }
+    .SeccionConsulta {
+        height: 25%;
+    }
+    .SeccionNosotros {
+        height: 20%;
+    }
+
+}
+
+/* Configuración iPhone PLUS 6/7/8 414 */
+@media (max-width: 415px) {    
+    #bloqueMenu h1 {
+        font-size:20px;
+    }
+    #bloqueMenu li {
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
+    #bloqueMenu p{
+        margin-bottom: -3px;
+    }
+    .seccionSignIn {
+        height: 15%;
+    }  
+    .SeccionHome {
+        height: 8%;
+    }
+    .SeccionHome li {
+        margin-top: 15px;
+    }
+    .SeccionConsulta {
+        height: 25%;
+    }
+    .SeccionDescubre {
+        height: 20%;
+    }
+    .SeccionNosotros {
+        height: 20%;
+    }
+}
+
+/* Configuración iPhone X y 6/7/8 375 */
+@media (max-width: 415px) {
+    .side-drawer{
+        max-width: 350px; 
+    }
+    .side-drawer.open {
+        transform: translateX(62%);  /* Posición desplegada */
+    }
+}
+
+/* Configuración Galaxy Note II 360 */
+@media (max-width: 360px) {
+    .side-drawer{
+        max-width: 340px; 
+        top: 60px;
+    }
+    .side-drawer.open {
+        transform: translateX(65%);  /* Posición desplegada */
+    }
+    .SeccionNosotros {
+        margin-top: 10px;
+    }
+}
+
+/* Configuración iPhone 5E 320 */
+@media (max-width: 321px) {   
+    .side-drawer{
+        max-width: 200px; 
+        top: 60px;
+    }
+    .side-drawer.open {
+        transform: translateX(86%);  /* Posición desplegada */
+    }
+    #bloqueMenu li {
+        font-size: 13px;
+        padding-bottom: 15px;
+    }
+    #bloqueMenu p{
+        font-size: 12px;
+        margin-bottom: -3px;
+        margin-top: 25px;
+    }
+    .seccionSignIn{
+        height: 20%;
+    }
+    .SeccionHome {
+        height: 10%;
+    }
+    .SeccionConsulta {
+        height: 30%;
+    }
+    .SeccionDescubre{
+        height: 25%;
+    }
+    .SeccionNosotros {
+        height: 20%;
+    }
+}
+

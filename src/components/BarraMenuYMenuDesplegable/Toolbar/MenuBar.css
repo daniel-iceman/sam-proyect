@@ -1,0 +1,169 @@
+/*@font-face{font-family:AntDesign;font-style:normal;font-weight:400;src:url(fonts/AntDesign.ttf) format('truetype')}@font-face{font-family:Entypo;font-style:normal;font-weight:400;src:url(fonts/Entypo.ttf) format('truetype')}@font-face{font-family:EvilIcons;font-style:normal;font-weight:400;src:url(fonts/EvilIcons.ttf) format('truetype')}@font-face{font-family:Feather;font-style:normal;font-weight:400;src:url(fonts/Feather.ttf) format('truetype')}@font-face{font-family:FontAwesome;font-style:normal;font-weight:400;src:url(fonts/FontAwesome.ttf) format('truetype')}@font-face{font-family:FontAwesome5;font-style:normal;font-weight:400;src:url(fonts/FontAwesome5.ttf) format('truetype')}@font-face{font-family:FontAwesome5Brands;font-style:normal;font-weight:400;src:url(fonts/FontAwesome5_Brands.ttf) format('truetype')}@font-face{font-family:Foundation;font-style:normal;font-weight:400;src:url(fonts/Foundation.ttf) format('truetype')}@font-face{font-family:Ionicons;font-style:normal;font-weight:400;src:url(fonts/Ionicons.ttf) format('truetype')}@font-face{font-family:MaterialCommunityIcons;font-style:normal;font-weight:400;src:url(fonts/MaterialCommunityIcons.ttf) format('truetype')}@font-face{font-family:MaterialIcons;font-style:normal;font-weight:400;src:url(fonts/MaterialIcons.ttf) format('truetype')}@font-face{font-family:Octicons;font-style:normal;font-weight:400;src:url(fonts/Octicons.ttf) format('truetype')}@font-face{font-family:SimpleLineIcons;font-style:normal;font-weight:400;src:url(fonts/SimpleLineIcons.ttf) format('truetype')}@font-face{font-family:Zocial;font-style:normal;font-weight:400;src:url(fonts/Zocial.ttf) format('truetype')}
+*/
+
+
+.menubar {
+    position: absolute; /*fixed*/
+    width: 100%;
+    background:rgb(255,255,255,0.8);
+    border-bottom: 1px solid rgb(212,212,212);
+    height: 56px;
+    top: 0;
+    left: 0;
+}
+
+.menubar_navigation {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0rem;
+    margin-right: 1rem;
+            
+}
+
+.menubar_navigation :hover {
+    color: white;
+    /*background-color: rosybrown;#192965*/
+}
+
+.menubar_navigation_items{
+    display: flex;
+    justify-content: space-between;   
+    margin-right: 60px;
+}
+
+.menubar_logo {
+    margin-left: 1rem;
+}
+
+.menubar_logo a {
+    color: #192965;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.spacer{
+    flex: 1;
+}
+
+.separacion {
+    margin-right: 1rem;
+}
+
+.menubar_navigation_items ul {
+    list-style: none;
+    margin:0;
+    padding: 0;
+    display: flex;
+}
+
+.menubar_navigation_items ul :hover {
+    background-color: #192965;        
+}
+
+.menubar_navigation_items li {
+    padding: 23px 0.8rem 3px 0.8rem;
+    margin-left: 0rem;
+    font-size: 0.9rem;
+}   
+
+.separacion1{
+    margin-right: 6rem;
+}
+.separacion1 li {
+    font-size: 26px;
+    padding: 15px 20px;
+}
+.separacion2{
+    margin-right: 2rem;    
+    margin-top: 0px;  
+}
+
+.menubar_navigation_items a {
+    font-family: 'Montserrat', sans-serif;
+    color: #000D4D;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    
+}
+
+.menubar_navigation_items a:hover,
+.menubar_navigation_items a:active {
+    color: white;
+}
+
+@media (min-width: 769px) {
+    .menubar_toogle_button {
+        display: none;
+    }
+    .menubar_user_toogle_button {
+        display: none;
+    }   
+}
+    
+
+/* Configuración iPad */
+@media (max-width: 769px){     
+    .menubar {
+        background: white;
+    }    
+    .menubar_navigation_items {
+        display: none;
+    }
+    .menubar_toogle_button {
+        margin-left: 20px;        
+    }    
+    .menubar_user_toogle_button {
+        margin-right: 115px;
+        margin-top: 4px;
+        color: white;
+    }
+    .menubar_logo {
+        margin-left: 260px;
+    }  
+}
+
+/* Configuración Nokia N9 480 */
+@media (max-width: 480px) {
+    .menubar_logo {
+        margin-left: 120px;
+    } 
+}
+
+/* Configuración iPhone Plus */
+@media (max-width: 415px) {
+    .menubar_logo {
+        margin-left: 90px;
+    } 
+}
+
+/* Configuración iPhone X y 6/7/8 375 */
+@media (max-width: 415px) {
+    .menubar_logo {
+        margin-left: 70px;
+    }
+}
+
+/* Configuración Galaxy Note II 360 */
+@media (max-width: 360px) {
+    .menubar_logo {
+        margin-left: 65px;
+    }
+}
+
+/* Configuración iPhone 5E 320 */
+@media (max-width: 321px) {
+    .menubar_logo {
+        margin-left: 50px;
+    }
+}
+
+
+
+
+

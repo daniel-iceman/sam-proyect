@@ -1,0 +1,222 @@
+.contenedor-medicos {
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    border-bottom: 1px solid #31b7bc;
+}
+.contenedor-medicos h3{
+    width: 280px;
+    color: black;
+    font-family: 'Montserrat';
+    font-size: 18px;
+}
+.contenedor-medicos h4{
+    color: #31b7bc;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 500;
+}
+.contenedor-medicos h5{
+    color: black;
+    font-family: 'Montserrat';
+    font-size: 13px;
+}
+
+.ImagenDoctor {
+    height: 190px;
+}
+.ImagenDoctor img{
+    width:150px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+/* ****** Pop-up Curriculum ****** */
+.pop-up-curriculum {    
+    height: 270px;
+}
+.Popup-btn {
+    width: 100px;
+    height: 30px;
+    border-style: none;
+    border-radius: 10px;
+    color: white;
+    background:  #31b7bc;
+    margin-top: -25px;
+}
+.pop-up-curriculum h4 {
+    margin: 0px;
+    padding: 0px;
+    width: 250px;
+    font-family: 'Raleway';
+    color: black;
+}
+.foto-curriculum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* ********** Información del médico ********* */
+.informacionDoctor{
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.trabajo-md {
+    display: flex;
+    align-items: center;
+}
+.trabajo-md h5{
+    margin-right: 10px;
+}
+
+/* ********** Botón honorarios ********* */
+.boton-honorarios {
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.boton-honorarios button {
+    width: 80px;
+    height: 40px;
+    font-family: 'Nunito';
+    font-size: 18px;
+    color: #2b9497;
+    border: 1px solid #31b7bc;
+    background: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.boton-honorarios button:hover {
+    background: #2b9497;
+    color: white;
+}
+ /* ****** Alineación de información medico y botón honorarios ******  */
+.info-contacto {
+    width: 40%;
+    height: 190px;
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: space-between;
+}
+
+
+
+
+/* Configuración iPad   768 */
+@media (max-width: 768px){
+    .contenedor-medicos {
+        margin-top: 50px;
+    }
+    .contenedor-medicos h3{
+        font-size: 16px;
+    }
+    .contenedor-medicos h4{
+        font-size: 15px;
+    }
+    .contenedor-medicos h5{
+        font-size: 13px;
+    }
+    .informacionDoctor{
+        width: 80%;
+    }
+    .boton-honorarios {
+        height: 60px;
+    }
+    .info-contacto {
+        justify-content: center;
+    }
+    .trabajo-md {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 125px;
+    }
+}
+
+/* Configuración Nokia N9   480 */
+@media (max-width: 480px){
+    .contenedor-medicos {
+        margin-top: 50px;
+    }
+    .contenedor-medicos h3{
+        width: 150px;
+        font-size: 18px;
+    }
+    .contenedor-medicos h4{
+        font-size: 16px;
+    }
+    .contenedor-medicos h5{
+        font-size: 13px;
+    }    
+    .informacionDoctor {
+        justify-content: left;
+        align-items: flex-start;
+    }    
+    .trabajo-md {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Configuración iPhone 6/7/8 PLUS  414 */
+@media (max-width: 414px){
+    .pop-up-curriculum h4 {
+        margin: 0px;
+        padding: 0px;
+        width: 200px;
+    }
+    .info-contacto{
+        margin-left: -20px;
+    }
+    
+}
+
+/* Configuración iPhone X   375 */
+@media (max-width: 375px){
+    .Popup-btn {
+        margin-left: -20px;
+    }
+    .trabajo-md {
+        width: 123px;
+    }
+    .contenedor-medicos h4{
+        font-size: 15px;
+        width: 124px;
+    }
+}
+
+/* Configuración iPhone X   375 */
+@media (max-width: 375px){
+    .Popup-btn {
+        margin-left: -40px;
+    }
+}
+
+/* Configuración iPhone 5 SE 320 */
+@media (max-width: 320px){
+    .Popup-btn {
+        width: 80px;
+        margin-left: -80px;
+    }
+    .contenedor-medicos h3{
+        width: 124px;
+        font-size: 16px;
+    }
+    .contenedor-medicos h4{
+        font-size: 15px;
+        width: 124px;
+    }
+    .contenedor-medicos h5{
+        font-size: 13px;
+    }    
+    .boton-honorarios {
+        margin-top: 25px;
+    }
+}

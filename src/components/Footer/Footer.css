@@ -1,0 +1,280 @@
+
+.footerContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0px;
+    z-index: 0;
+}
+.footerColumnas {
+    width: 100%;    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    letter-spacing: 1px;
+    font-family: 'Yantramanav', sans-serif;
+    border-bottom: 1px solid white;    
+}
+.footerBase {
+    width: 100%;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;  
+}
+
+.columna {
+    width: 250px;
+    height: 390px;
+    flex-basis: 20%;
+    flex: auto;
+    top: 40px;    
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    position: relative;    
+}
+.columna h1 {
+    color:orange;
+    font-size: 16px;
+}
+.columna h2 {
+    color: white;
+    font-size: 18px;
+}
+.columna p {
+    width: 280px;
+    color:rgb(255, 255, 255);
+    font-size: 14px;
+    text-align: justify;
+    letter-spacing: 2px;
+}
+.columna ul {
+    font-size: 14px;
+    text-align: start;
+    list-style: none;
+    padding: 0px;
+}
+.columna li {
+    color:rgb(255, 255, 255);
+    padding-top: 15px;
+    letter-spacing: 2px;
+}
+.columna li:hover {
+    color: orange;
+}
+
+.contactanos button {
+    width: 160px;
+    height: 35px;    
+    color: #00001A;
+    background: white;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    border: hidden;
+    margin-top: -1px;
+    margin-bottom: 20px;   
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.contactanos button:hover {
+    background: orange;
+    color: white;
+    border:3px solid white;
+}
+
+.suscribete{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.suscribete button {
+    width: 160px;
+    height: 35px;
+    color: white;
+    background: orange;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    border: hidden;
+    margin-top: -1px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.suscribete button:hover {
+    background: #00001A;
+    color: orange;
+    border:1px solid white;
+    font-weight: 300;
+}
+
+.socialMedia {    
+    grid-column: 3;
+    text-align: center;        
+}
+.socialMedia ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.socialMedia a {
+    color: orange;
+    font-size: 25px; 
+}
+.brand {
+    grid-column: 4 / 6;
+    align-self: center;
+    justify-self: center;    
+}
+.brand p {
+    width: fit-content;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 100;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+/* Configuración iPad Pro*/
+@media (max-width: 1025px) {
+    .footerColumnas {
+        width: 90%;                
+    }    
+    .suscribete{
+        margin-top: 0px;
+    }     
+    .columna:nth-last-child(1) {
+        height: 150px;
+    }   
+}
+
+/* Configuración iPad */
+@media (max-width: 769px) {   
+    .footerColumnas {
+        width: 100%;                
+    }  
+    .columna {
+        flex-basis: 33.33%; 
+        flex: auto;
+    }
+    .columna p {
+        width: 180px;
+    }
+    .suscribete{
+        margin-top: 80px;
+    }
+    .columna:nth-last-child(1) {
+        height: 240px;
+    }
+    .footerBase{
+        height: 120px;
+    }
+    .socialMedia{
+        height: 20px;
+    }
+    .brand{
+        grid-row: 2;
+        grid-column: 2/5;
+        text-align: center;
+    }
+}
+
+/* Configuración Nokia N9 480 */
+@media (max-width: 480px) {   
+
+    .columna:nth-last-child(1) {
+        height: 20px;
+        padding-top: 150px;
+    } 
+    .columna:nth-last-child(2) {
+        height: 110px;
+        padding-top: 50px;
+    }
+    .columna:nth-last-child(3) {
+        height: 250px;
+    }
+    .columna:nth-last-child(4) {
+        height: 290px;
+    } 
+    .columna p {
+        width: 400px;
+    }    
+    .columna button {
+        margin-top: 30px;
+    }
+    .navegacion {
+        margin-top: 20px;
+    }
+    .interes {
+        margin-top: -40px;
+    }
+    .suscribete {
+        margin-top: -150px;
+    }
+    .footerBase {
+        margin-top: 60px;
+    }
+}
+
+
+/* Configuración iPhone Plus */
+@media (max-width: 415px) {        
+    .columna {
+        width: 100%;
+    }
+    .columna:nth-last-child(1) {
+        height: 10px;
+        padding-top: 150px;
+    } 
+    .columna:nth-last-child(2) {
+        height: 50px;
+        padding-top: 140px;
+    }
+    .columna:nth-last-child(3) {
+        height: 250px;
+    }
+    .columna:nth-last-child(4) {
+        height: 350px;
+    } 
+    .columna p {
+        width: 280px;
+    }
+    .interes {
+        margin-top: -130px;
+    }
+    .suscribete {
+        margin-top: -160px;
+        margin-bottom: 50px;
+    }    
+    .socialMedia{
+        height: 50px;
+    }
+    .socialMedia ul {
+        padding-left: 5px;
+        align-self: center;
+    }
+    .socialMedia a {
+        padding-left: 30px;
+        align-self: center;
+    }
+}
+
+/* Configuración iPhone X y 6/7/8 375 */
+@media (max-width: 415px) {
+    .suscribete h2{
+        text-align: center;
+    }
+}
+
+/* Configuración iPhone X (mide 812 de largo)*/
+
+@media (max-width: 376px) {
+
+}

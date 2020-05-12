@@ -1,0 +1,704 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.bodyContainer-Nosotros {
+    height: 3200px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+/* *************** Contenido del Header ************** */
+.headerPage {
+    min-height: 580px;
+    width: 100%;
+}
+.header-coverNosotros {
+    background-image: url('../images/Nurse_short_home_image.jpg');
+    height: 580px; /*AQUI REGULO TAMAÑO DE IMAGEN*/
+    background-size:cover;
+    position: absolute;
+    z-index: -2;
+    top:0px;
+    right: 0;    
+}
+.header-overlayNosotros {
+    width: 1700px;
+    height: 580px;
+    background: linear-gradient(90deg, rgb(0, 39, 77,1) 40%, rgba(0, 39, 77, 0.8) 70%, rgba(3, 36, 70, 0.4) 90%, rgba(77,0,64,0)) 100%; 
+    position: relative;
+    z-index: -4;
+    top: 0px;
+    left: -703px;
+}
+.header-textCoverNosotros{
+    width: 40%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    top:100px;
+    left: 100px;
+    z-index: 1;
+}
+.header-textCoverNosotros h1 {
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+}
+.header-textCoverNosotros p {
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 30px;
+}
+.header-textCoverNosotros button {    
+    width: 200px;
+    height: 50px;
+    background: rgb(45, 143, 138);
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.header-textCoverNosotros button:hover {
+    background: rgb(65, 182, 176);
+    color: white;
+} 
+.botonesHeader-Nosotros {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;  
+}
+
+.buttonConoce-Nosotros a{
+    width: 80px;
+    padding: 0px;
+    text-decoration: none;
+    color: white;
+    text-size-adjust: 60px;
+}
+
+
+
+/* ******************** Edición del BODY ********************** */
+.intro-Nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.intro-Nosotros p {
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: rgb(0, 39, 77,1);
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+.intro-Nosotros h2 {
+    margin-top: 120px;
+    align-self: flex-start;
+    font-family: 'Montserrat', sans-serif;
+    font-size:40px;
+    font-weight: 500;
+    color: rgb(0, 39, 77,1);
+    letter-spacing: 1px;
+}
+.intro-Nosotros li {
+    align-self: flex-start;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: rgb(0, 39, 77,1);
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+
+
+/* *************** Sección LA CIENCIA Y TECNOLOGIA ****************** */
+.coverNosotros {
+    width: 100%;
+    background-image: url('../images/Doctor_developer.PNG');
+    height: 580px; /*AQUI REGULO TAMAÑO DE IMAGEN*/
+    background-size:cover;
+    position: absolute;
+    z-index: -2;
+    top:1400px;  
+}
+.overlayNosotros {
+    width: 1903px;
+    height: 580px;
+    background: linear-gradient(90deg, rgb(0, 39, 77,0.8) 20%, rgba(0, 39, 77, 0.6) 50%, rgba(77,0,77, 0.5) 70%, rgb(77,0,77,0.8) 100%); 
+    position: relative;
+    z-index: -4;
+    top: 0px;
+    left: 0px;
+}
+
+
+/*Aqui esta la edición de la posición  del texto que esta sobre la imagen
+de La ciencia y Tecnologia */
+
+.textoNosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 750px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.textoNosotros h1 {
+    width: 550px;
+    height: 300px;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 60px;
+    align-self: flex-start;
+    margin-left: 100px;
+    margin-top: -450px;
+    position: absolute;
+    z-index: 4;
+}
+
+.textoNosotros p {
+    width: 100%;    
+    color: rgb(0, 39, 77,1);
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+
+/* *************** Contenido Sección Video Publicitario ************** */
+.textoPublicity {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+    padding-right: 30px;
+    margin-bottom: 50px;
+}
+.textoPublicity h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size:40px;
+    font-weight: 500;
+    color: rgb(0, 39, 77,1);
+    letter-spacing: 1px;
+}
+.textoPublicity p {
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: rgb(0, 39, 77,1);
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+
+.espacio{
+    height: 90px;
+}
+.videoPublicity {
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+}
+
+.btn-inicio {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    margin-top: 60px;
+}
+.btn-inicio button {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-style: none;
+    box-shadow: 5px 5px 15px -5px gray;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    color: rgb(45, 143, 138);
+    letter-spacing: 1px;
+    border-radius: 0px 20px 0px 20px;
+    cursor: pointer;
+}
+.btn-inicio a {
+    text-decoration: none;
+}
+
+/* Configuración Lap Top */
+@media (max-width: 1367px) {
+    .header-overlayNosotros {        
+        left: -403px;
+    }
+    .overlayNosotros {
+        left: -554px;
+    }
+    .textoNosotros h1 {
+        margin-left: 70px;
+        margin-top: -500px;
+    }
+}
+
+/* Configuración iPad Pro */
+@media (max-width: 1025px) {
+    .bodyContainer-Nosotros {
+        height: 3300px;
+    }
+    .header-textCoverNosotros h1 { 
+        margin-left: -50px;
+        margin-top: -20px;
+    }
+    .header-textCoverNosotros p { 
+        margin-left: -50px;
+    }    
+    .botonesHeader-Nosotros {
+        width: 450px;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: -50px;
+        margin-top: 20px;
+    }
+    .header-overlayNosotros {
+        width: 1700px;
+        height: 580px;        
+        top: 0px;
+        left: -203px;
+    }    
+    .intro-Nosotros{
+        margin-top: -30px;
+    }    
+    .intro-Nosotros h2 {        
+        margin-top: 40px;
+    }
+    .coverNosotros {        
+        height: 500px;
+    }
+    .overlayNosotros {
+        height: 500px;
+        left: -880px;
+    }
+    .textoNosotros {
+        margin-top: 550px;
+    }
+    .textoNosotros h1 {
+        font-size: 60px;
+        margin-left: 0px;
+        margin-top: -330px;
+    }   
+    .textoNosotros p {
+        margin-top: 40px;
+    }
+}
+
+/* Configuración iPad */
+@media (max-width: 769px) { 
+    .bodyContainer-Nosotros {
+        height: 3400px;
+    }
+    .header-coverNosotros {
+        width: 1700px;
+        height: 590px; /*AQUI REGULO TAMAÑO DE IMAGEN*/
+    } 
+    .header-overlayNosotros {
+        width: 1600px;
+        height: 590px;
+        left: 100px;
+    } 
+    .header-textCoverNosotros h1 { 
+        font-size: 33px;
+        margin-top: 140px;
+    }
+    .header-textCoverNosotros p { 
+        width: 670px;
+        margin-top: 0px;
+    }  
+    .coverNosotros {        
+        height: 400px;
+        margin-top: 240px;
+    }
+    .overlayNosotros {
+        width: 880px;
+        height: 400px;
+        left: -115px;        
+    }    
+    .textoNosotros {
+        margin-top: 500px;
+    }
+    .textoNosotros h1 {
+        width: 450px;
+        font-size: 50px;
+        margin-top: -310px;
+    }   
+    .textoNosotros p {
+        margin-top: 40px;
+    }
+    .videoPublicity {
+        width: 100%;
+        height: 250px;
+    }    
+}
+
+/* Configuración Nokia N9 480 */
+@media (max-width: 481px) {
+    .bodyContainer-Nosotros {
+        height: 3080px;
+    }
+    .header-coverNosotros {    
+        width: 600px;
+        height: 200px; /*AQUI REGULO TAMAÑO DE IMAGEN*/
+        margin-top: 50px;
+    } 
+    .header-overlayNosotros {
+        width: 400px;
+        height: 200px;
+        left: 100px;
+    } 
+    .header-textCoverNosotros h1 {
+        width: 350px; 
+        font-size: 33px;
+        margin-top: 30px;
+        margin-left: -70px;
+        margin-bottom: 90px;
+    }
+    .header-textCoverNosotros p { 
+        width: 400px;
+        font-size: 18px;
+        color:  rgb(0, 39, 77);
+        margin-top: 0px;
+        margin-left: -60px; 
+    }  
+    .botonesHeader-Nosotros {
+        margin-left: -82px;
+        width: 450px;
+    }
+    .botonesHeader-Nosotros button {
+        width: 180px;
+        font-size: 20px;
+    }
+    .intro-Nosotros{
+        width: 400px;
+        padding: 0px;
+        margin-left: 40px;
+        margin-bottom: -180px;
+    }
+    .intro-Nosotros p { 
+        width: 100%;
+        font-size: 18px;       
+        margin-top: 20px;
+    }
+    .intro-Nosotros h2 { 
+        width: 100%;
+        font-size: 30px;       
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    .intro-Nosotros li { 
+        width: 100%;
+        font-size: 19px;
+        text-align: justify;       
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .coverNosotros { 
+        width: 479px;       
+        height: 250px;
+        margin-top: 150px;
+    }
+    .overlayNosotros {
+        width: 479px;
+        height: 250px;
+        left: 0px;        
+    }    
+    .textoNosotros {
+        width: 400px;
+        margin-top: 500px;
+        margin-left: 40px;
+        padding: 0px;
+    }
+    .textoNosotros h1 {
+        width: 300px;
+        font-size: 30px;
+        margin-top: -160px;
+        margin-left: 0px;
+        text-shadow: 1.5px 1.5px black;
+    }   
+    .textoNosotros p {
+        font-size: 18px; 
+        margin-top: 0px;
+    }
+
+    .textoPublicity {
+        padding: 0px;
+        margin-left: 40px;
+        margin-bottom: 50px;
+    }
+    .textoPublicity h1 {
+        width: 95%;
+        font-size:30px;
+    }
+    .textoPublicity p {     
+        width: 90%;   
+        font-size: 19px;
+    }    
+}
+
+/* Configuración iPhone Plus  415*/
+@media (max-width: 415px) {
+    .header-textCoverNosotros h1 {
+        width: 250px; 
+        font-size: 26px;
+        margin-left: -80px;   
+        margin-top: 50px;  
+    }
+    .header-textCoverNosotros p { 
+        width: 340px;
+        font-size: 15px;
+    } 
+    .botonesHeader-Nosotros {
+        margin-left: -62px;
+        width: 350px;
+    }
+    .botonesHeader-Nosotros button {
+        width: 160px;
+        font-size: 18px;
+    }
+    .intro-Nosotros{
+        width: 340px;
+        padding: 0px;
+        margin-left: 40px;
+        margin-bottom: -180px;
+        margin-top: -20px;
+    }
+    .intro-Nosotros p { 
+        width: 100%;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .intro-Nosotros h2 { 
+        font-size: 25px;       
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    .intro-Nosotros li { 
+        width: 100%;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .coverNosotros { 
+        width: 414px;       
+        height: 200px;
+        margin-top: -90px;
+    }
+    .overlayNosotros {
+        width: 414px;
+        height: 200px;   
+    }    
+    .textoNosotros {
+        width: 390px;
+        margin-top: 430px;
+        margin-left: 10px;
+    }
+    .textoNosotros h1 {
+        width: 300px;
+        font-size: 28px;
+        margin-left: 10px;
+    }   
+    .textoNosotros p {
+        width: 340px;
+        font-size: 16px; 
+        margin-top: 0px;
+        margin-left: 0px;
+        line-height: 28px;
+    }
+    .textoPublicity h1 {
+        width: 95%;
+        margin-top: -20px;
+        font-size:25px;
+    }
+    .textoPublicity p {     
+        width: 90%;   
+        font-size: 17px;
+        line-height: 28px;
+    }
+}
+
+/* Configuración iPhone X  375 */
+@media (max-width: 376px){
+    .bodyContainer-Nosotros {
+        height: 2520px;
+    }
+    .header-textCoverNosotros h1 {
+        font-size: 24px;
+        margin-left: -90px;   
+        margin-top: -10px;  
+    }
+    .header-textCoverNosotros p { 
+        width: 335px;
+        font-size: 15px;
+        line-height: 24px;
+        margin-left:-80px;
+    } 
+    .botonesHeader-Nosotros {
+        margin-left: -88px;
+    }
+    .intro-Nosotros{
+        width: 335px;
+        margin-left: 20px;
+        margin-top: -80px;       
+        margin-bottom: -180px;
+    }
+    .coverNosotros { 
+        width: 375px;       
+        height: 200px;
+        margin-top: -150px;
+    }
+    .overlayNosotros {
+        width: 375px;
+        height: 200px;   
+    }    
+    .textoNosotros {
+        width: 375px;
+        margin-top: 430px;
+        margin-left: 0px;
+    }
+    .espacio {
+        width: 90%;
+    }
+    .textoPublicity {
+        width: 375px;
+        margin: 0px;
+    }
+    .textoPublicity h1 {
+        margin-left: 18px;
+        font-size:25px;
+    }
+    .textoPublicity p { 
+        margin-left: 18px;
+        margin-bottom: 30px;
+    }    
+}
+
+/* Configuración Galaxy Note II 360 */
+@media (max-width: 360px) {
+    .bodyContainer-Nosotros {
+        height: 2600px;
+    }
+    .header-textCoverNosotros h1 {
+        font-size: 23px;
+    }
+    .header-textCoverNosotros p { 
+        width: 325px;
+        font-size: 14px;
+        margin-left:-83px;
+    } 
+    .botonesHeader-Nosotros {
+        margin-left: -95px;
+    }
+    .intro-Nosotros{
+        width: 325px;
+        margin-left: 20px;
+        margin-bottom: -180px;
+    }
+    .coverNosotros { 
+        width: 359px; 
+        margin-top: -70px;
+    }
+    .overlayNosotros {
+        width: 359px;  
+    } 
+    .textoNosotros {
+        width: 320px;
+    }
+    .textoNosotros p{
+        margin-left: 36px;
+    }
+    .textoPublicity{
+        width: 320px;
+    }
+    .textoPublicity h1 {
+        width: 300px;
+        margin-left: 18px;
+    }
+    .textoPublicity p { 
+        width: 340px;
+        margin-left: 10px;
+    } 
+        
+}
+
+/* Configuración iPhone 5E 320 */
+@media (max-width: 321px) {  
+    .bodyContainer-Nosotros {
+        height: 2850px;
+    }
+    .header-textCoverNosotros h1 {
+        margin-top: 50px;
+        margin-bottom: 45px;
+    }
+    .header-textCoverNosotros p { 
+        width: 280px;
+        font-size: 14px;
+        margin-left:-80px;
+        margin-bottom: 0px;
+    } 
+    .botonesHeader-Nosotros {
+        width: 300px;
+        margin-top: 5px;
+        margin-left: -90px;        
+    }
+    .botonesHeader-Nosotros button {
+        width: 140px;
+        font-size: 16px;
+    }
+    .intro-Nosotros{
+        width: 283px;
+    }
+    .coverNosotros { 
+        width: 320px; 
+        margin-top: 70px;
+    }
+    .overlayNosotros {
+        width: 320px;  
+    } 
+    .textoNosotros {
+        width: 95%;
+    }
+    .textoNosotros p{
+        width: 95%;
+        margin-left: 20px;
+    }
+    .textoPublicity p { 
+        width: 280px;
+        margin-left: 20px;
+    } 
+    .videoPublicity{
+        height: 280px;
+    }
+
+}

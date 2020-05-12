@@ -1,0 +1,471 @@
+html, body {
+    margin: 0px;
+}
+
+select:required:invalid {
+    color: rgb(161, 161, 161);
+}
+option[value=""][disabled] {
+    display: none;
+}
+option {
+    color: #000;    
+}
+select {
+    width: 75px;
+    height: 30px;
+    font-family: 'Raleway';
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+input{
+    width: 230px;
+    max-width: 380px;
+    height: 28px;
+    border-radius: 5px;
+    font-family: 'Raleway';
+    font-size: 15px;
+    font-weight: 500;
+    border-style: none;
+    padding-left: 5px;
+}
+input::placeholder{
+    color: rgb(161, 161, 161);
+}
+p{
+    color: whitesmoke;
+    font-size: 12px;
+    font-family: 'Raleway';
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+h1 {
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 35px;
+}
+.entry-container {
+    width: 100%;
+    height: 950px;       
+}
+.imageBackground{    
+    background-image: url('../images/doctorsMD.jpg');
+    filter: blur(9px);
+    background-size: cover;
+    width: 100%;
+    height: 950px;
+    position: absolute;
+    z-index: -4;
+}
+
+/* ************ Recuadro movible ********** */
+.move-cover-LogIn {
+    width: 450px; 
+    height: 775px; 
+    background: #ff7315;
+    border-radius: 20px 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 120px;
+    left: 200px;
+    position: relative;
+    z-index: 2;
+    animation: crossLeft 1s forwards;
+}
+
+.move-cover-LogIn h1 {
+    font-weight: 500;
+    animation: textoStop-LogIn 1s forwards;
+}
+.move-cover-LogIn h2 {
+    text-align: center;
+    animation: textoStop-LogIn 1s forwards;
+}
+.move-cover-LogIn button {
+    width: 150px;
+    height: 40px;
+    font-family: 'Montserrat';
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #ff7315;
+    border-style: none;
+    border: 1px solid white;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+.move-cover-LogIn button:hover{
+    background-color: white;
+    color: #ff7315;
+}
+
+/* ************ RECUADRO AZUL ********** */
+.form-container-LogIn {
+    width: 50%;
+    height: 775px;
+    background: rgb(0,0,77,0.6);
+    position: absolute;
+    z-index: 1;
+    top: 120px;
+    left: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: stretch;
+    border-radius: 20px;
+    font-family: 'Raleway';
+    color: white;
+}
+
+/* ************ Zona de Ingreso Usuario ********** */
+.seccion-Ingreso {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    margin-right: 50px;  
+    animation: apareceForm-LogIn 1s forwards;
+}
+.seccion-Ingreso h1 {
+    margin-top: -20px;    
+}
+.btn-olvido-password button {
+    height: 30px;
+    width: 200px;
+    border-radius: 15px;
+    border-style: none;
+    background:white;
+    color: #00004D;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn-ingresar button{
+    height: 40px;
+    width: 130px;
+    border-radius: 15px;
+    border-style: none;
+    background: rgb(250,125,0);
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 500;    
+    cursor: pointer;
+    
+}
+
+@keyframes crossLeft {
+    0%{
+        transform: translateX(400px); 
+        border-radius: 0px 0px 0px 0px;
+    }
+    100%{
+        transform: translateX(0px);
+        border-radius: 20px 0px 0px 20px; 
+    }
+}
+@keyframes textoStop-LogIn {
+    0%{
+        transform: translateX(-100px);
+        color: rgb(255,255,255, 0);
+    }
+    100%{
+        transform: translateX(0px); 
+    }
+}
+
+@keyframes apareceForm-LogIn {
+    0%{
+        transform: translateX(-400px);
+    }
+    100%{
+        transform: translateX(0px); 
+    }
+}
+
+@keyframes apareceFormMovil-LogIn {
+    0%{
+        transform: translateX(60px);
+    }
+    100%{
+        transform: translateX(0px); 
+    }
+}
+
+/* Configuración Lap Top */
+@media (max-width: 1367px) and (max-height:769px) {
+    .entry-container {
+        height: 700px;       
+    }
+    .imageBackground{ 
+        width: 100%;
+        height: 700px;
+    }
+    .move-cover-LogIn {
+        height: 550px;
+        top: 80px;
+    }
+    .form-container-LogIn {
+        width: 70%;
+        height: 550px;
+        top: 80px;
+    }
+}
+
+/* Configuración iPad Pro*/
+@media (max-width: 1025px) and (max-height: 1367px) {   
+    .move-cover-LogIn {
+        width: 400px; 
+        left: 90px;        
+    } 
+    .form-container-LogIn {
+        width: 85%;
+        left: 90px;        
+    }
+}
+
+/* Configuración iPad */
+@media (max-width: 769px) {    
+    input{
+        width: 300px;
+        height: 35px;        
+        font-size: 18px;        
+        padding-left: 5px;
+        margin-top: 10px;
+    }
+    select {
+        width: 98px;
+        height: 40px;
+        font-size: 18px;
+    }
+    p{
+        color: whitesmoke;
+        font-size: 16px;
+        font-family: 'Raleway';
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+        margin-top: 15px;
+    }
+    .move-cover-LogIn {
+        height: 200px;
+        width: 620px;
+        left: 75px;
+        top: 80px;
+        border-radius: 20px 20px 0px 0px;
+        animation: none;
+    }
+    .move-cover-LogIn h1 {
+        margin-top: 0px;
+        font-weight: 500;
+        animation: textoStop-LogIn 1s forwards;
+    }
+    .move-cover-LogIn h2 {
+        margin-top: -15px;
+        text-align: center;
+        animation: textoStop-LogIn 1s forwards;
+    }
+    .move-cover-LogIn button {
+        width: 150px;
+        height: 40px;
+        margin-top: 0px;
+    }
+    .form-container-LogIn {
+        width: 620px;
+        height: 80%;
+        top: 80px;
+        left: 75px;
+    }
+    .seccion-Ingreso {
+        width: 400px;  
+        margin-top: 50px;      
+        margin-right: 110px;  
+        animation: apareceFormMovil-LogIn 1s forwards;
+    }
+    .btn-olvido-password button {
+        height: 50px;
+        width: 300px;
+        margin-top: 20px;        
+        font-size: 18px;        
+    }
+    .btn-ingresar button{
+        height: 50px;
+        width: 150px;    
+        margin-top: 40px;    
+        font-size: 20px;
+    }
+}
+
+/* Configuración Nokia N9 480 */
+@media (max-width: 480px) {
+    .entry-container {
+        height: 1050px;       
+    }
+    select {
+        width: 122px;
+        height: 50px;
+        font-size: 23px;
+    }
+    input{
+        width: 370px;
+        height: 50px;        
+        font-size: 23px;
+    }
+    p{
+        font-size: 18px;        
+        margin-top: 15px;
+    }
+    .imageBackground{    
+        background: white;
+        background-image: none;
+    }
+    .move-cover-LogIn {
+        width: 98%;
+        height: 20%;
+        left: 5px;
+        top: 65px;
+    }
+    .move-cover-LogIn h1 {
+        margin-top: 0px;
+    }
+    .move-cover-LogIn h2 {
+        width: 80%;
+        font-size: 22px;
+        margin-top: 0px; 
+    }
+    .move-cover-LogIn button {
+        font-size: 23px;
+        width: 220px;
+        height: 50px;
+        margin-top: 5px;
+    }
+    .form-container-LogIn {
+        width: 98%;
+        height: 90%;
+        background: rgb(0,0,60,1);
+        justify-content: center;
+        left: 5px;
+        top: 260px;
+    }
+    .seccion-Ingreso {
+        width: 480px;    
+        margin-top: -280px;    
+        margin-left: 100px;
+    }
+}
+
+/* Configuración iPhone Plus */
+@media (max-width: 415px) {
+    .entry-container {
+        height: 980px;       
+    }
+    .move-cover-LogIn {
+        height: 15%;
+        top: 60px;
+    }
+    .move-cover-LogIn h1 {
+        font-size: 32px;
+    }
+    .move-cover-LogIn h2 {
+        font-size: 20px;
+    }
+    .move-cover-LogIn button {
+        width: 160px;
+        font-size: 20px;
+        height: 40px;        
+    }
+    .form-container-LogIn {
+        width: 98%;
+        height: 105%;
+        background: rgb(0,0,60,1);
+        left: 5px;
+        top: 190px;
+    }
+    .Ingresar-cuenta{
+        margin-left: 10px;
+    }    
+}
+
+/* Configuración iPhone X  375 */
+@media (max-width: 376px){
+    .entry-container {
+        height: 1020px;
+        margin-left: -1px;        
+    }
+    select {
+        width: 115px;
+        height: 40px;
+        font-size: 23px;
+    }
+    input{
+        width: 350px;
+        height: 40px;        
+        font-size: 23px;
+    }
+    p{
+        font-size: 18px;        
+        margin-top: 15px;
+    }
+    .move-cover-LogIn {
+        width: 98%;
+        left: 5px;
+    }
+    .form-container-LogIn {        
+        left: 4px;
+        top: 190px;
+    }
+}
+
+/* Configuración 6/7/8 375 */
+@media (max-width: 376px) and (max-height: 667px) {
+    .entry-container {
+        height: 980px;
+    }
+    input{      
+        font-size: 21px;
+    }
+}
+
+/* Configuración Galaxy Note II 360 */
+@media (max-width: 360px) {
+    .entry-container {
+        height: 930px;
+    }
+    input{
+        width: 293px;
+        height: 40px;        
+        font-size: 20px;
+    }
+    select {
+        width: 97px;
+        height: 40px;
+        font-size: 23px;
+    }
+    .move-cover-LogIn h2 {
+        font-size: 18px;
+    }
+}
+
+/* Configuración iPhone 5E 320 */
+@media (max-width: 321px) { 
+    .entry-container {
+        height: 950px;
+    }
+    input{        
+        font-size: 18px;
+    }
+    .move-cover-LogIn h1 {
+        font-size: 28px;
+    }
+    .move-cover-LogIn h2 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+}

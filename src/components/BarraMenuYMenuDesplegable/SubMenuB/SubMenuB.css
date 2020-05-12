@@ -1,0 +1,106 @@
+.dropdownPerfil {
+    position: relative;
+    display: inline-block;
+    left:10px;
+    top:-2px;
+    height:5px;
+    cursor: pointer;
+}
+.dropdownPerfil :hover {
+    color: white;
+    background-color:#192965;
+}
+   
+/* Menu desplegable -Posición, ancho, color y family font*/
+.SubMenuUlPerfil {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    top:62px;
+    right:-40px;
+    width: 450px;
+    background-color: #10316b;
+    font-weight: 600px;
+    position: absolute;    
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:3;
+    animation: despliegueMenuPerfil 0.7s ease-out both;
+}
+
+/* Letra del submenú */
+.link {
+    text-decoration: none;
+}
+
+/* Background y color del menu desplegable */
+.SubMenuUlPerfil li  {
+    font-family: 'Montserrat', sans-serif;
+    color: #10316b;
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: 1.6px;
+    word-spacing: 2px;
+    background: white
+    
+}
+.SubMenuUlPerfil li {
+    padding: 18px 16px;
+    border-bottom: 1px solid #e5e5e5;
+   
+}
+.SubMenuUlPerfil li:last-child {
+    border-bottom: none;
+}
+
+/*Hover del menú descendente*/
+.SubMenuUlPerfil li:hover {
+    background-color: #f0f0f0 ;/* */
+    color:#10316b;
+    animation: menuGoPerfil 0.2s ease-in both;
+}
+
+/* Titulo del submenu, color, letra y fondo*/    
+.buttonSMPerfil {
+    width:80px;
+    height:23px;
+    display: flex;
+    justify-content: center;
+    padding:20px 0;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color:#000D4D;
+    margin-right: 0px;
+        
+}
+
+@keyframes menuGoPerfil{
+    0%{
+        transform: translateX(0px);
+    }    
+    100%{
+        transform: translateX(8px);
+    }
+}
+
+@keyframes despliegueMenuPerfil {
+    0%{
+        transform: translateX(200px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+
+
+
+
+@media (max-width: 780px) {
+    .dropdownPerfil {
+        display: none;
+    }
+    
+}
